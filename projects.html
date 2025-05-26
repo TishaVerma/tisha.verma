@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .half-bg {
+            width: 100%;
+            background-color: teal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 70px;
+            box-sizing: border-box;
+        }
+
+        header {
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        .bottom-right-text {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .bottom-right-text a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content-row {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content-row h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .content-row p {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+            }
+
+            .bottom-right-text {
+                font-size: 0.9rem;
+                right: 10px;
+            }
+
+            .content-row {
+                padding: 15px;
+            }
+
+            .content-row p {
+                padding-left: 10px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bottom-right-text {
+                position: static;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .half-bg {
+                padding: 15px;
+            }
+
+            header {
+                font-size: 1.8rem;
+            }
+
+            .content-row h3 {
+                font-size: 1.1rem;
+            }
+
+            .content-row p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="half-bg">
+    <header>Projects</header>
+    <div class="bottom-right-text">
+        <a href="index.html">Back to Previous Page</a>
+    </div>
+</div>
+
+<div class="content-row">
+    <h3>1. ENI (Ente Nazionale Idrocarburi) (Feb 2024–present) (Java)</h3>
+    <p>
+        - Collaborated with a team to develop interactive dashboards for ENI.<br>
+        - Utilized Rapid interface technologies for the user interface to ensure a seamless experience.<br>
+        - Managed backend operations through REST API calls for efficient data handling.<br>
+        - Employed Spring Boot for application development, ensuring scalability and performance.<br>
+    </p>
+</div>
+
+<div class="content-row">
+    <h3>2. Heart Disease Prediction (Python)</h3>
+    <p>
+        - Developed a supervised machine learning model using logistic regression and random forest to predict heart disease with 91% accuracy.<br>
+        - Performed EDA using pandas, matplotlib, and seaborn to identify key risk factors.<br>
+        - Applied scaling, encoding, and cleaning techniques to improve model performance.<br>
+        - Visualized results with heatmaps, pair plots, and ROC curves.<br>
+        - Evaluated with precision, recall, F1-score, and cross-validation.<br>
+    </p>
+</div>
+
+<div class="content-row">
+    <h3>3. SMS Spam Classifier (Python)</h3>
+    <p>
+        - Cleaned SMS text using tokenization and stemming with NLTK.<br>
+        - Used TF-IDF for text vectorization.<br>
+        - Trained Naive Bayes and SVM models for spam detection.<br>
+        - Visualized patterns with word clouds and frequency charts.<br>
+        - Evaluated with confusion matrix, F1-score, precision, and recall.<br>
+    </p>
+</div>
+
+<div class="content-row">
+    <h3>4. Stack Overflow Tag Prediction (Python)</h3>
+    <p>
+        - Processed large datasets to predict programming tags.<br>
+        - Cleaned text with lemmatization and HTML tag removal.<br>
+        - Built multi-label models using Logistic Regression and Naive Bayes.<br>
+        - Evaluated with Jaccard score, Hamming loss, and accuracy.<br>
+    </p>
+</div>
+
+</body>
+</html>

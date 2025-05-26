@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .half-bg {
+      width: 100%;
+      background-color: teal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 70px;
+      position: relative;
+      text-align: center;
+    }
+
+    header {
+      font-size: 2.5rem;
+      color: white;
+      margin: 0;
+    }
+
+    .bottom-right-text {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .bottom-right-text a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .cert-badge {
+      width: 80%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 12px 20px;
+      background-color: #e6f0ff;
+      color: #0057b8;
+      font-weight: 600;
+      font-size: 1rem;
+      border: 1px solid #0057b8;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 2rem;
+      }
+
+      .cert-badge {
+        width: 90%;
+        font-size: 0.95rem;
+      }
+
+      .bottom-right-text {
+        font-size: 0.9rem;
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.7rem;
+      }
+
+      .cert-badge {
+        width: 95%;
+        font-size: 0.9rem;
+        padding: 10px 15px;
+      }
+
+      .bottom-right-text {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .half-bg {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="half-bg">
+  <header>Recognition and Certification</header>
+  <div class="bottom-right-text">
+    <a href="index.html">Back to Previous Page</a>
+  </div>
+</div>
+
+<div class="cert-badge">
+  Microsoft Certified: Azure Data Fundamentals (DP-900)
+</div>
+
+<div class="cert-badge">
+  ACE (Accenture celebrates excellence) Recognition
+</div>
+
+<div class="cert-badge">
+  Java | Cohort 5
+</div>
+
+<div class="cert-badge">
+  Data Science and Machine Learning Bootcamp
+</div>
+
+<div class="cert-badge">
+  SQL Skill Forge
+</div>
+
+<div class="cert-badge">
+  National Medalist in Fencing
+</div>
+
+</body>
+</html>

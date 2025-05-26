@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .half-bg {
+      height: 30vh;
+      width: 100%;
+      background-color: teal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 70px;
+      text-align: center;
+    }
+
+    header {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .bottom-right-text {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .bottom-right-text a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content-row {
+      padding: 20px;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .bar {
+      width: 100%;
+      background: #e0e0e0;
+      height: 12px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background-color: #4CAF50;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 2rem;
+      }
+
+      .bottom-right-text {
+        font-size: 0.9rem;
+        right: 10px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      .label {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.8rem;
+      }
+
+      .bottom-right-text {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .half-bg {
+        padding: 15px;
+      }
+
+      .content-row {
+        padding: 15px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .label {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="half-bg">
+  <header>Skills</header>
+  <div class="bottom-right-text">
+    <a href="index.html">Back to Previous Page</a>
+  </div>
+</div>
+
+<div class="content-row">
+  <h3>Programming Languages</h3>
+  <div class="skill"><div class="label">1. Java</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">2. Python</div><div class="bar"><div class="bar-fill" style="width: 75%;"></div></div></div>
+  <div class="skill"><div class="label">3. C++</div><div class="bar"><div class="bar-fill" style="width: 50%;"></div></div></div>
+</div>
+
+<div class="content-row">
+  <h3>Frameworks & Libraries</h3>
+  <div class="skill"><div class="label">1. Spring Boot</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">2. Pandas</div><div class="bar"><div class="bar-fill" style="width: 75%;"></div></div></div>
+  <div class="skill"><div class="label">3. Scikit-learn</div><div class="bar"><div class="bar-fill" style="width: 50%;"></div></div></div>
+  <div class="skill"><div class="label">4. Tkinter</div><div class="bar"><div class="bar-fill" style="width: 70%;"></div></div></div>
+  <div class="skill"><div class="label">5. Matplotlib</div><div class="bar"><div class="bar-fill" style="width: 60%;"></div></div></div>
+  <div class="skill"><div class="label">6. TensorFlow</div><div class="bar"><div class="bar-fill" style="width: 40%;"></div></div></div>
+</div>
+
+<div class="content-row">
+  <h3>Database and Tools</h3>
+  <div class="skill"><div class="label">1. MySQL</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">2. Azure</div><div class="bar"><div class="bar-fill" style="width: 75%;"></div></div></div>
+  <div class="skill"><div class="label">3. GitLab</div><div class="bar"><div class="bar-fill" style="width: 75%;"></div></div></div>
+  <div class="skill"><div class="label">4. Alteryx</div><div class="bar"><div class="bar-fill" style="width: 50%;"></div></div></div>
+  <div class="skill"><div class="label">5. Power BI</div><div class="bar"><div class="bar-fill" style="width: 50%;"></div></div></div>
+  <div class="skill"><div class="label">6. Postman</div><div class="bar"><div class="bar-fill" style="width: 70%;"></div></div></div>
+  <div class="skill"><div class="label">7. Sonar</div><div class="bar"><div class="bar-fill" style="width: 80%;"></div></div></div>
+</div>
+
+<div class="content-row">
+  <h3>Workplace Methodologies & Collaboration Skills</h3>
+  <div class="skill"><div class="label">1. Agile Methodology</div><div class="bar"><div class="bar-fill" style="width: 80%;"></div></div></div>
+  <div class="skill"><div class="label">2. SDLC</div><div class="bar"><div class="bar-fill" style="width: 85%;"></div></div></div>
+  <div class="skill"><div class="label">3. Client Communication</div><div class="bar"><div class="bar-fill" style="width: 75%;"></div></div></div>
+</div>
+
+<div class="content-row">
+  <h3>Soft Skills</h3>
+  <div class="skill"><div class="label">1. Effective Communication</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">2. Active Listening</div><div class="bar"><div class="bar-fill" style="width: 85%;"></div></div></div>
+  <div class="skill"><div class="label">3. Analytical Thinking</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">4. Attention to Detail</div><div class="bar"><div class="bar-fill" style="width: 90%;"></div></div></div>
+  <div class="skill"><div class="label">5. Team Collaboration</div><div class="bar"><div class="bar-fill" style="width: 85%;"></div></div></div>
+</div>
+
+</body>
+</html>
